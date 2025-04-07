@@ -4,9 +4,9 @@ const result = invitadospareja(name);
 function invitadospareja(names) {
     let parejas = []; 
     
-    for (let i = 0; i < names.length - 1; i++) {  // Recorrer hasta el penúltimo elemento
-        for (let j = i + 1; j < names.length; j++) {  // Comparar con los siguientes elementos
-            if (names[i][0] === names[j][0]) {  // Si las iniciales coinciden
+    for (let i = 0; i < names.length - 1; i++) {  
+        for (let j = i + 1; j < names.length; j++) { 
+            if (names[i][0] === names[j][0]) {  
                 parejas.push([names[i], names[j]]);
             }
         }
